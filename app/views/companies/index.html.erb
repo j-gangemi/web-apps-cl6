@@ -1,0 +1,11 @@
+<p>Companies!</p>
+
+<%companies = Company.all%>
+<%companies.inspect%>
+
+<ul>
+<% for company in companies%>
+<li><%= company["name"] %></li>
+<%end%>
+
+</ul>
